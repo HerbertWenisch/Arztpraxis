@@ -26,4 +26,8 @@ public class Arztpraxis{
        if (arzt1.size() < arzt2.size()) arzt1.add(0, p); 
        else arzt2.add(0,p);
     }
+    
+    public boolean istPraxisLeer(){
+       return kinderarzt.isEmpty() && arzt1.isEmpty() && arzt2.isEmpty();
+    }
 }
