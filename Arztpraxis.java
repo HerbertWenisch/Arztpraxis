@@ -21,4 +21,9 @@ public class Arztpraxis{
         else if (arzt1.size() < arzt2.size()) arzt1.add(p);
              else arzt2.add(p);
     }
+    
+    public void priorisieren(Patient p){
+       if (arzt1.size() < arzt2.size()) arzt1.add(0, p); 
+       else arzt2.add(0,p);
+    }
 }
